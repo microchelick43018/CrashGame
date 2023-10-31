@@ -77,7 +77,7 @@ namespace CrashGameSimulation
         private static double GetCrashPoint(Random random)
         {
             double rand = random.NextDouble() * (1 - (1.0 / 110)) + (1.0 / 110);
-            double crashPoint = Math.Pow();
+            double crashPoint = 1 / rand;
             return Math.Floor(crashPoint * 100) / 100;
         }
 
